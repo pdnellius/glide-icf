@@ -1,6 +1,6 @@
 window.function = function generateAvatars(imageURLs) {
   // Split the input string into an array of URLs and trim whitespace
-  const urls = imageURLs.split(',').map(url => url.trim());
+  const urls = imageURLs.value.split(',').map(url => url.trim());
 
   // Use an array to collect HTML snippets for better performance on large arrays
   const htmlSnippets = urls.map((url, index) => {
