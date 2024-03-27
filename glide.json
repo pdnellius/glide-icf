@@ -1,19 +1,21 @@
+[
 {
+  "kind": "column",
   "name": "Overlapping Circular Avatars",
   "description": "This plugin takes a comma-separated string of image URLs and generates HTML to display these images as overlapping circular avatars with inline CSS.",
   "author": "Glide Plugin Generator via Robert Petitto",
-  "inputs": [
+  "params": [
     {
       "name": "imageURLs",
       "type": "string",
       "description": "A comma-separated list of image URLs."
     }
   ],
-  "outputs": [
+  "result":
     {
       "name": "htmlOutput",
       "type": "string",
       "description": "HTML code for displaying the images as overlapping circular avatars."
     }
-  ]
 }
+]
