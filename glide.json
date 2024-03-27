@@ -13,7 +13,7 @@
     {
       "name": "size",
       "displayName": "Avatar Size in pixels",
-      "type": "number"
+      "type": "primative"
     }
   ],
   "result":
