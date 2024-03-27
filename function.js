@@ -1,4 +1,4 @@
-function generateAvatars(imageURLs) {
+window.function = function generateAvatars(imageURLs) {
   // Split the input string into an array of URLs and trim whitespace
   const urls = imageURLs.split(',').map(url => url.trim());
 
