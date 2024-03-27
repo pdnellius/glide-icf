@@ -7,8 +7,8 @@
   "params": [
     {
       "name": "imageURLs",
-      "type": "string",
-      "displayName": "Image URLS (comma separated)"
+      "displayName": "Image URLS (comma separated)",
+      "type": "string"
     }
   ],
   "result":
