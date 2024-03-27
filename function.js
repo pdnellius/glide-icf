@@ -5,7 +5,7 @@ window.function = function(imageURLs, size) {
   
   // Use an array to collect HTML snippets for better performance on large arrays
   const htmlSnippets = urls.map((url, index) => {
-    return `<img src="${url}" alt="Avatar ${index + 1}" style="border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; margin-left: ${index > 0 ? '-15px' : '0px'};" />`;
+    return `<img src="${url}" alt="Avatar ${index + 1}" style="border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; object-fit: cover; margin-left: ${index > 0 ? '-15px' : '0px'};" />`;
   });
 
   // Construct the final HTML string
