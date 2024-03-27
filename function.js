@@ -9,7 +9,7 @@ window.function = function(imageURLs,size) {
   });
 
   // Construct the final HTML string
-  const htmlOutput = `<div style="display: flex; flex-direction: row; align-items: center;">${htmlSnippets.join('')}</div>`;
+  const htmlOutput = `<div style="display: flex; flex-direction: row; align-items: center; overflow-x: auto; max-width: 100%; -ms-overflow-style: none; scrollbar-width: none;">${htmlSnippets.join('')}</div>`;
 
   return htmlOutput;
 }
