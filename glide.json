@@ -8,14 +8,12 @@
     {
       "name": "imageURLs",
       "type": "string",
-      "description": "A comma-separated list of image URLs."
+      "displayName": "Image URLS (comma separated)"
     }
   ],
   "result":
     {
-      "name": "htmlOutput",
-      "type": "string",
-      "description": "HTML code for displaying the images as overlapping circular avatars."
+      "type": "string"
     }
 }
 ]
