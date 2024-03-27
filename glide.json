@@ -9,6 +9,11 @@
       "name": "imageURLs",
       "displayName": "Image URLS (comma separated)",
       "type": "string"
+    },
+    {
+      "name": "size",
+      "displayName": "Avatar Size in pixels",
+      "type": "integer"
     }
   ],
   "result":
