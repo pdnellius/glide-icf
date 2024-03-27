@@ -1,4 +1,4 @@
-window.function = function(imageURLs,size) {
+window.function = function(imageURLs, size) {
   // Split the input string into an array of URLs and trim whitespace
   const urls = imageURLs.value.split(',').map(url => url.trim());
   const imagesize = size.value;
