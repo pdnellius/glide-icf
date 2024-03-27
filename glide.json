@@ -16,9 +16,8 @@
         "type": "number"
       }
     ],
-    "result":
-      {
+    "result": {
         "type": "string"
-      }
+    }
   }
 ]
