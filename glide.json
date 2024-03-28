@@ -19,6 +19,16 @@
         "name": "cap",
         "displayName": "Avatar limit",
         "type": "number"
+      },
+      {
+        "name": "backgroundColor",
+        "displayName": "Background color of limit avatar",
+        "type": "string"
+      },
+      {
+        "name": "textColor",
+        "displayName": "Text color of limit avatar",
+        "type": "string"
       }
     ],
     "result": {
