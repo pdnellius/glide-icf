@@ -12,7 +12,12 @@
       },
       {
         "name": "size",
-        "displayName": "Avatar Size in pixels",
+        "displayName": "Avatar size in pixels",
+        "type": "number"
+      },
+      {
+        "name": "cap",
+        "displayName": "Avatar limit",
         "type": "number"
       }
     ],
