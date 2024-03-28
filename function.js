@@ -27,7 +27,7 @@ window.function = function(imageURLs, size, cap, backgroundColor, textColor) {
 
   // Add an additional avatar if there are more avatars than the cap
   if (remainingCount > 0) {
-    htmlSnippets.push(`<div style="background-color: ${bg_color}; border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; display: flex; align-items: center; justify-content: center; margin-left: -15px; font-size: ${imagesize / 4}px; color: ${text_color};">+${remainingCount}</div>`);
+    htmlSnippets.push(`<div style="background-color: ${bg_color}; border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; display: flex; align-items: center; justify-content: center; margin-left: -15px; font-weight: bold, font-size: ${imagesize / 4}px; color: ${text_color};">+${remainingCount}</div>`);
   }
 
   // Construct the final HTML string
