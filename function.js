@@ -1,6 +1,6 @@
 window.function = function(imageURLs, size, cap, backgroundColor, textColor) {
-  // Decode the input string and then split into an array of URLs
-  const urls = decodeURIComponent(imageURLs.value).split(',').map(url => url.trim());
+  // Split the input string into an array of URLs and trim whitespace
+  const urls = imageURLs.value.split(',').map(url => url.trim());
   const imagesize = size.value;
   
   // Set default colors if none provided
@@ -22,14 +22,12 @@ window.function = function(imageURLs, size, cap, backgroundColor, textColor) {
 
   // Use an array to collect HTML snippets for better performance on large arrays
   let htmlSnippets = urls.slice(0, displayCount).map((url, index) => {
-    // Ensure the individual URL is encoded only for setting it in the src attribute
-    const encodedUrl = encodeURIComponent(url);
-    return `<img src="${encodedUrl}" alt="Avatar ${index + 1}" style="border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; object-fit: cover; margin-left: ${index > 0 ? '-15px' : '0px'};" />`;
+    return `<img src="${url}" alt="Avatar ${index + 1}" style="border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; object-fit: cover; margin-left: ${index > 0 ? '-15px' : '0px'};" />`;
   });
 
   // Add an additional avatar if there are more avatars than the cap
   if (remainingCount > 0) {
-    htmlSnippets.push(`<div style="background-color: ${bg_color}; border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; display: flex; align-items: center; justify-content: center; margin-left: -15px; font-size: ${imagesize / 4}px; color: ${text_color};">+${remainingCount}</div>`);
+    htmlSnippets.push(`<div style="background-color: ${bg_color}; border-radius: 50%; width: ${imagesize}px; height: ${imagesize}px; display: flex; align-items: center; justify-content: center; margin-left: -15px; font-weight: bold, font-size: ${imagesize / 4}px; color: ${text_color};">+${remainingCount}</div>`);
   }
 
   // Construct the final HTML string
