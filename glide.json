@@ -1,38 +1,23 @@
 [
   {
     "kind": "column",
-    "name": "Overlapping Circular Avatars",
-    "description": "This plugin takes a comma-separated string of image URLs and generates HTML to display these images as overlapping circular avatars with inline CSS.",
-    "author": "Robert Petitto",
+    "name": "Glide ICF Test",
+    "description": "Takes two columns and returns formatted HTML from them",
+    "author": "Pete Nellius",
     "params": [
       {
-        "name": "imageURLs",
-        "displayName": "Image URLS (comma separated)",
+        "name": "joinedSection",
+        "displayName": "A string of comma-separated sections",
         "type": "string"
       },
       {
-        "name": "size",
-        "displayName": "Avatar size in pixels",
-        "type": "number"
-      },
-      {
-        "name": "cap",
-        "displayName": "Avatar limit",
-        "type": "number"
-      },
-      {
-        "name": "backgroundColor",
-        "displayName": "Background color of limit avatar",
-        "type": "string"
-      },
-      {
-        "name": "textColor",
-        "displayName": "Text color of limit avatar",
+        "name": "joinedText",
+        "displayName": "A string of comma-separated text that corresponds with the sections",
         "type": "string"
       }
     ],
     "result": {
-        "type": "string"
+      "type": "string"
     }
   }
 ]
