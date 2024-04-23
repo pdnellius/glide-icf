@@ -36,7 +36,9 @@ window.function = function(joinedSection, joinedText) {
   output.appendChild(textHeading);
   output.appendChild(textList);
 
-  return output;
+  html = `${output}`;
+
+  return html;
 }
 
 
