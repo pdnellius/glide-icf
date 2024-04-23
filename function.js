@@ -10,8 +10,10 @@ window.function = function(joinedSection, joinedText) {
   const output = document.createElement('div');
   //create a H2 for our sectionsList
   const sectionsHeading = document.createElement('h2');
+  sectionsHeading.innerText = "Sections:"
   // create an H2 for our textList
   const textHeading = document.createElement('h2');
+  sectionsHeading.innerText = "Text:"
   // create an ordered list that that will be our first list
   const sectionsList = document.createElement('ol');
   // create an ordered list that will be our second list
